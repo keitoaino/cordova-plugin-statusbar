@@ -192,6 +192,7 @@ public class StatusBar extends CordovaPlugin {
         window.getDecorView().setSystemUiVisibility(visibility);
 
         if (isTransparent) {
+            WindowCompat.setDecorFitsSystemWindows(window, true);
             window.setStatusBarColor(Color.TRANSPARENT);
         }
     }
